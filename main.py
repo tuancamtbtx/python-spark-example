@@ -1,5 +1,5 @@
 from pyspark import SparkContext
-from pyspark.sql import HiveContext
+from pyspark.sql import SQLContext
 import time
 import sys
 import argparse
@@ -29,14 +29,14 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()    
     parser.add_argument('--pip_modules', required=True, help='pip modules zip path')
     parser.add_argument('--src', required=True, help='source files zip path')
-    parser.add_argument('--some_arg', type=str, required=True, help="some argument")    
+    parser.add_argument('--some_arg', type=str, required=False, default=None, help="some argument")    
     args = parser.parse_args()    
 
     # creating spark context with source project files and external pip modules
     print('creating spark context. libs:', args.pip_modules, args.src)
     sc = SparkContext(appName="Some App Name", pyFiles=[args.pip_modules, args.src])
     sc.setLogLevel('WARN')
-    sql_context = HiveContext(sc)
+    sql_context = SQLContext(sc)
     print('hive context created')
 
     # run jobs
