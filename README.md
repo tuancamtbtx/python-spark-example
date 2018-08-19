@@ -1,7 +1,7 @@
 ## spark-submit with pyspark simple template
 A simple usage example of pyspark with spark-submit, including:  
 - passing arguments
-- creating spark context and hive context
+- creating spark context and sql context
 - loading your project source code (src directory )
 - loading pip modules (with simple requirements file) 
 
