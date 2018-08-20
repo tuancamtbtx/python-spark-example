@@ -21,6 +21,6 @@ from terminal, run:
 
 ## running pyspark interactive shell with pip modules and source code
 - run: pyspark
-- from within pyspark interactive shell, run the following:
-```sc.addPyFile("src.jar")```
-```sc.addPyFile("pip_modules.jar")```
+- from within pyspark interactive shell, run the following:   
+```sc.addPyFile("src.jar")```   
+```sc.addPyFile("pip_modules.jar")```   
