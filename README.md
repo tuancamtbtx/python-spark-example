@@ -1,3 +1,6 @@
+## requirements  
+Spark with pyspark
+
 ## spark-submit with pyspark simple template
 A simple usage example of pyspark with spark-submit, including:  
 - passing arguments
@@ -7,11 +10,13 @@ A simple usage example of pyspark with spark-submit, including:
 
 
 ## preparing libraries (source and pip modules)
-pip install -r ./requirements.txt -t ./pip_modules && jar -cvf pip_modules.jar -C ./pip_modules .   
-jar -cvf src.jar -C ./src .   
+from terminal, run:  
+```pip install -r ./requirements.txt -t ./pip_modules && jar -cvf pip_modules.jar -C ./pip_modules .   ```
+```jar -cvf src.jar -C ./src .   ```
 
 ## running spark-submit
-spark-submit main.py --some_arg=some_value --pip_modules=pip_modules.jar --src=src.jar  
+from terminal, run:  
+```spark-submit main.py --some_arg=some_value --pip_modules=pip_modules.jar --src=src.jar  ```
 
 
 ## running pyspark interactive shell with pip modules and source code
