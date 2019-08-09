@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## requirements  
 Spark with pyspark
 
@@ -24,3 +25,7 @@ from terminal, run:
 - from within pyspark interactive shell, run the following:   
 ```sc.addPyFile("src.jar")```   
 ```sc.addPyFile("pip_modules.jar")```   
+=======
+# zing_mp3_recommendation
+zing recommendation
+>>>>>>> 26d2899a311e12c317ff481170bbc26db0f578f2
