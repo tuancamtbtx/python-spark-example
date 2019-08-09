@@ -5,10 +5,6 @@ import sys
 import argparse
 from pyspark.sql import SparkSession
 
-def use_pip_modules():
-    import requests
-    response = requests.get('https://google.com')
-    print('using pip module - response status code from google:', response.status_code)
 
 def use_project_source_code():
     import foo
