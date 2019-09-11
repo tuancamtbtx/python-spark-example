@@ -25,7 +25,6 @@ from terminal, run:
 - from within pyspark interactive shell, run the following:   
 ```sc.addPyFile("src.jar")```   
 ```sc.addPyFile("pip_modules.jar")```   
-=======
 # zing_mp3_recommendation
 zing recommendation
 # 
