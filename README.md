@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## requirements  
 Spark with pyspark
 
@@ -28,4 +28,4 @@ from terminal, run:
 =======
 # zing_mp3_recommendation
 zing recommendation
->>>>>>> 26d2899a311e12c317ff481170bbc26db0f578f2
+# 
